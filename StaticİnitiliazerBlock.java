@@ -10,7 +10,7 @@ import java.util.Scanner;
  * 
  */
 
-public class Static›nitiliazerBlock {
+public class StaticInitiliazerBlock {
 	static int B;
 	static int H;
 	static boolean flag;
