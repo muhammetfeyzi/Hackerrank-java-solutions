@@ -13,7 +13,7 @@ public class CurrencyFormatter {
         Scanner scan = new Scanner(System.in);
         double payment = scan.nextDouble();
         scan.close();
-        //variable decleration but just not initilization any adress on memory
+        //variable decleration but just not initilization any adress on memory..
         String us ,india,china,france;
 
         NumberFormat nfUs = NumberFormat.getCurrencyInstance(new Locale("en", "US"));
