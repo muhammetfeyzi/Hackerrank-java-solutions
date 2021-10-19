@@ -17,10 +17,18 @@ public class JavaStringTokens {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
         // Write your code here.
-        String regexPattern= "[^a-zA-Z]+";
-        List<String> splitArrayString= Arrays.asList(s.split(regexPattern));
-        System.out.println(splitArrayString.size());
-        splitArrayString.forEach(System.out::println);
-        scan.close();
+        s = s.trim();
+        if (s.length()>400000){
+            return ;
+        }else if (s.length()==0){
+            System.out.println(0);
+            return ;
+        }else {
+            String regexPattern = "[!,?.*_'@\\ ]+";
+            List<String> splitArrayString = Arrays.asList(s.split(regexPattern));
+            System.out.println(splitArrayString.size());
+            splitArrayString.forEach(System.out::println);
+            scan.close();
+        }
     }
 }
